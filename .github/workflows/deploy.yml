@@ -31,5 +31,4 @@ jobs:
       - name: Upload to S3
         id: upload
         run: |
-          lambdas=`fiap-hello-world`
-          for i in $lambdas; do aws s3 cp build/latest.zip s3://fiap-12dvp-hello-world/latest.zip; done
+          aws s3 cp build/latest.zip s3://fiap-hello-world-12dvp/latest.zip
